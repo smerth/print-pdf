@@ -11,8 +11,18 @@ commander
     .action(() => {
         clear();
         console.log(
-            chalk.magenta(
-                figlet.textSync("printPDF", { horizontalLayout: full })
+            chalk.cyanBright(
+                figlet.textSync("********", { horizontalLayout: "full" })
+            )
+        );
+        console.log(
+            chalk.black.bgCyanBright.bold(
+                figlet.textSync("printPDF", { horizontalLayout: "full" })
+            )
+        );
+        console.log(
+            chalk.cyanBright(
+                figlet.textSync("********", { horizontalLayout: "full" })
             )
         );
     });
