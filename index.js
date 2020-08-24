@@ -3,7 +3,8 @@ const chalk = require("chalk");
 const figlet = require("figlet");
 const clear = require("clear");
 
-const files = require("./lib/files");
+const printPdf = require("./lib/printPDF");
+// const files = require("./lib/files");
 
 commander
     .command("init")
@@ -31,3 +32,8 @@ commander.parse(process.argv);
 if (!commander.args.length) {
     commander.help();
 }
+
+// TODO: get input from user
+// TODO: pass input to print function
+
+printPdf.print();
